@@ -6,16 +6,6 @@ const uglify = require('gulp-uglify-es').default;
 const browserSync = require('browser-sync').create();
 const clean =require('gulp-clean');
 
-function scripts() {
-    return src([
-            'app/js/main.js'
-        ])
-        .pipe(concat('main.min.js'))
-        .pipe(uglify())
-        .pipe(dest('app/js')) 
-        .pipe(browserSync.stream())   
-}
-
 function styles() {
     return src([
         
@@ -29,7 +19,6 @@ function styles() {
 
 function watching() {
     watch(['app/scss/style.scss'], styles)
-    watch(['app/js/main.js'],scripts)
     watch(['app/*.html']).on('change', browserSync.reload)
 }
 
@@ -43,8 +32,7 @@ function browsersync(){
 
 function building(){
     return src([
-        'app/css/style.min.css',
-        'app/js/main.min.js',
+        'app/css/style.min.css',        
         'app/**/*.html',
         'app/images/*'
     ], {base: 'app'})
@@ -54,14 +42,10 @@ function building(){
 function cleanDist (){
     return src('dist')
     .pipe(clean())
-
 }
 
-
 exports.styles = styles;
-exports.scripts = scripts;
 exports.watching = watching;
 exports.browsersync = browsersync;
-
 exports.build = series(cleanDist, building);
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, browsersync, watching);

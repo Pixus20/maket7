@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+$primary: #de5d5d
+$secondary: #ffffff
+$body-font: 'Varela Round', sans-serif    
+
+*
+    box-sizing: border-box
+    font-family: $body-font 
+
+body
+    
+    .container-fluid
+        .banner_slider
+            background:$primary
+            width: 100%
+            height: 786px
+            margin: 0
+            padding: 0
+            overflow: hidden
+            .slider1
+                .slick-dots
+                    top: 45rem 
+                    li
+                        width: .5rem !important
+                        height: .5rem !important
+                        border: 1px solid $secondary 
+                        border-radius: 50%
+                        &.slick-active 
+                            background-color: $secondary 
+                        button          
+                            &::before 
+                                content: ''
+                .slide     
+                    position: relative               
+                    object-fit: cover 
+                    .slide1_content
+                        .slide1_title
+                            position: absolute
+                            top: 30%
+                            left: 50%
+                            transform: translate(-50%, -50%)
+                            text-align: center
+                            z-index: 2
+                            p
+                                font-size: 85px
+                                color: $secondary  
+                        .slide1_button
+                            position: absolute
+                            top: 43%
+                            left: 30%
+                            z-index: 2
+                            .slide1_btn1,
+                            .slide1_btn2
+                                background-color: transparent
+                                border: 2px solid $secondary
+                                color: $secondary
+                                text-align: center
+                                text-decoration: none
+                                font-size: 26px
+                                cursor: pointer                        
+                                border-radius: 10px
+                                height: 4rem    
+                                transition: all 0.3s ease-in-out
+                            .slide1_btn1:hover                    
+                                color: $primary
+                                transform: scale(1.2)
+                    .img-fluid 
+                        max-width: 100%
+                        height: auto
+                        

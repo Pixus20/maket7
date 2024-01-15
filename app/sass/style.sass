@@ -25,10 +25,8 @@ $body-font: 'Varela Round', sans-serif
     box-sizing: border-box  
     font-family: 'Varela Round', sans-serif
 body
-    
     .container-fluid
         .banner_slider          
-            
             .slider1
                 .slick-dots
                     top: 90% 
@@ -43,7 +41,8 @@ body
                             &::before 
                                 content: ''
                 .slide  
-                    min-height: max-content
+                    position: relative
+                    min-height: 80vh
                     background-color:$primary
                     background-image: url('../images/maket_images/iPhone.png')
                     background-repeat: no-repeat
@@ -80,5 +79,4 @@ body
                             .slide1_btn2:hover>i
                                 transition-delay: .5s
                                 animation: buttons 1s ease-in-out
-                    
-                        
+                                            

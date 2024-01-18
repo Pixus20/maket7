@@ -1,0 +1,6 @@
+
+@mixin set-height($max-width, $height) {
+    @media (max-width: $max-width) {
+      height: $height;
+    }
+  }

@@ -1,0 +1,62 @@
+body{
+    .container-fluid{ 
+        padding: 0;       
+            .banner{
+                padding: 0;            
+                .slider_banner{                    
+                    .slick-dots{
+                        top: 90%;
+                        li{
+                            width: .6rem; 
+                            height: .6rem; 
+                            border: 1px solid $secondary ;
+                            border-radius: 50%;
+                            &.slick-active {
+                                background-color: $secondary ;
+                            }
+                            button{          
+                                &::before{ 
+                                    content: '';
+                                }
+                            }  
+                        }
+                    }
+                    .slider_incide{
+                        height: 85vh;
+                        background-color: $primary;
+                        background-image: url("../images/maket_images/iPhone.png");  
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: 50% 0;
+                        color: $secondary;
+                        .row{
+                            .slider_buttons{
+                                button{
+                                    border: 2px solid $secondary;
+                                    background: transparent;
+                                }
+                                button:hover{
+                                    background-color: $third;
+                                    transition: all 1s ease-in-out;
+                                    transform: scale(1.2);
+                                    color: $primary;
+                                    border-color: $primary;
+                                    box-shadow: 0 3px 3px 2px $primary;
+                                }
+                                button:hover>span>i{
+                                    animation: buttons 1s;
+                                }
+                            }
+                        }
+                        @include set-height($adaptive-laptop, 70vh);
+                        @include set-height(900px, 60vh);
+                        @include set-height(700px, 50vh);
+                        @include set-height(600px, 40vh);
+                        @include set-height(500px, 35vh);
+                        @include set-height(400px, 30vh);
+                        @include set-height(350px, 27vh);
+                }
+            }    
+        }
+    }
+}

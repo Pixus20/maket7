@@ -1,19 +1,21 @@
 const { src, dest, watch, parallel, series } = require("gulp");
-const sass = require("gulp-dart-sass");
+
+const scss = require("gulp-sass")(require("sass"));
 const concat = require("gulp-concat");
 const uglify = require("gulp-uglify-es").default;
 const browserSync = require("browser-sync").create();
 const clean = require("gulp-clean");
 
 function styles() {
-  return src(["app/sass/style.sass"])
-    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+  return src(["app/scss/style.scss"])
+    .pipe(concat("style.css"))
+    .pipe(scss({ outputStyle: "compressed" }))
     .pipe(dest("app/css"))
     .pipe(browserSync.stream());
 }
 
 function watching() {
-  watch(["app/sass/style.sass"], styles);
+  watch(["app/scss/**/*.scss"], styles);
   watch(["app/*.html"]).on("change", browserSync.reload);
 }
 
@@ -25,6 +27,10 @@ function browsersync() {
   });
 }
 
+function building() {
+  return src(["app/css/style.css", "app/**/*.html", "app/images/*", "app/fonts/*"], { base: "app" }).pipe(dest("dist"));
+}
+
 function cleanDist() {
   return src("dist").pipe(clean());
 }
@@ -32,4 +38,6 @@ function cleanDist() {
 exports.styles = styles;
 exports.watching = watching;
 exports.browsersync = browsersync;
+
+exports.build = series(cleanDist, building);
 exports.default = parallel(styles, browsersync, watching);

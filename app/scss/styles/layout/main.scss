@@ -1,0 +1,13 @@
+body{
+    .container-fluid{
+        .second_block{
+            .row{
+                .content_second_block{
+                    img{                        
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}

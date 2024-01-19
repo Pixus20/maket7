@@ -1,4 +1,4 @@
-$(".slider_banner").slick({
+$(".slider_banner, .content_third_slider").slick({
   dots: true,
   infinity: true,
   arrows: false,

@@ -5,21 +5,7 @@ body{
                 padding: 0;            
                 .slider_banner{                    
                     .slick-dots{
-                        top: 90%;
-                        li{
-                            width: .6rem; 
-                            height: .6rem; 
-                            border: 1px solid $secondary ;
-                            border-radius: 50%;
-                            &.slick-active {
-                                background-color: $secondary ;
-                            }
-                            button{          
-                                &::before{ 
-                                    content: '';
-                                }
-                            }  
-                        }
+                        top: 90%;                        
                     }
                     .slider_incide{
                         height: 85vh;

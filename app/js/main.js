@@ -12,6 +12,7 @@ function initSlickSlider() {
     slidesToScroll: 1,
     infinite: true,
     dots: false,
+    arrows:false,
     autoplay: true,
     autoplaySpeed: 5000,
     responsive: [
@@ -30,7 +31,7 @@ function initSlickSlider() {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          dots: false
+          dots: true
         }
       },
       {
@@ -38,8 +39,8 @@ function initSlickSlider() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
-          dots: false
+          infinite: true,  
+          dots:true        
         }
       }
     ]

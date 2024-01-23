@@ -56,10 +56,19 @@ body{
         color: $secondary;
         height: 665px; 
         overflow: hidden;
+        @media(max-width:$adaptive-lg){
+            height: 900px;
+        }
         .row{
             .content_fourth_in{
+                @media(max-width:$adaptive-lg){
+                    height: 900px;
+                }               
                 .content_fourth_left{
                     height: 600px; 
+                    @media(max-width: $adaptive-lg){
+                    height: 250px;
+                    }
                     p{
                         color:$fourth_text;
                     }
@@ -69,6 +78,14 @@ body{
                             border-top-left-radius: 1%;   
                             background-color: $secondary;                                                     
                             .contetn_fourth_text{
+                                width: 100%;
+                                img{
+                                    @media(max-width:$adaptive-lg){
+                                        width: 90px;
+                                        height: 90px;
+                                    }
+                                    
+                                }
                                 span{
                                     h7{
                                         color:$primary;
@@ -79,9 +96,27 @@ body{
                                 }
                                 .slider4{
                                     width: 260px;
+                                    @media(max-width:$adaptive-slider2){
+                                        width: 200px;
+                                    }
                                     .slick-dots{
                                         top: 137%; 
-                                        right: 76%;;
+                                        right: 76%;
+                                        @media(max-width:$adaptive-container){
+                                            right: 60%;
+                                        }
+                                        @media(max-width:$adaptive-lg){
+                                            display: flex;                                            
+                                            justify-content: center;
+                                            right: 0;    
+                                            top: 140%;                                        
+                                        }
+                                        @media(max-width:$adaptive-slider2){
+                                            top: 130%;
+                                        }
+                                    }
+                                    p{
+                                        width: 96%;
                                     }
                                 }
                             }
@@ -89,10 +124,28 @@ body{
                         .slider_fourth_color{
                             background-color:$primary;
                             height: 43px; 
-                            border-bottom-left-radius: 2%; 
-                            border-bottom-right-radius: 2%                                                   
+                            border-bottom-left-radius: 3%; 
+                            border-bottom-right-radius: 3%;                                                   
                         }        
                     }          
+                }
+                img{
+                    @media(max-width:$adaptive-lg){
+                        height: 480px;
+                        width: 350px;
+                    }
+                    @media(max-width:$adaptive-tablet){
+                        height: 450px;
+                        width: 330px;
+                    }
+                    @media(max-width:$adaptive-slider2){
+                        height: 400px;
+                        width: 300px;
+                    }
+                    @media(max-width:$adaptive-mobile){
+                        height: 380px;
+                        width: 280px;
+                    }
                 }
             }
         }

@@ -26,7 +26,7 @@ function initSlickSlider() {
         }
       },
       {
-        breakpoint: 1000,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -35,7 +35,7 @@ function initSlickSlider() {
         }
       },
       {
-        breakpoint: 500,
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -47,9 +47,7 @@ function initSlickSlider() {
   });
 }
 function destroySlickSlider() {
-  if ($(".fifth_images_in").hasClass("slick-initialized")) {
-    $(".fifth_images_in").slick("unslick");
-  }
+  $(".fifth_images_in").slick("unslick");
 }
 $(document).ready(function() {
   if (window.innerWidth <= 1700) {

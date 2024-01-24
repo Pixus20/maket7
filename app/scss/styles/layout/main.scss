@@ -169,14 +169,16 @@ body{
                         height: 520px;
                         width: 100%;
                         transition: transform 1s ease-in-out, z-index 0s linear .1s; 
+                        @media(max-width:$adaptive-mobile){
+                            height: 400px;
+                        }
                     }             
                     .slider5-hover {
                         display: none;  
                         animation: fadeInOut 1s ease-in-out forwards;                
                         @media (max-width: $adaptive-laptop) {
-                            display: block;
-                            height: 100px;
-                            bottom: 100px;
+                            display: flex;
+                            height: 100px;                                                      
                         }                    
                         .img-efect {
                             position: absolute;
@@ -184,13 +186,26 @@ body{
                             height: 14%;
                             background-color: $black-2;
                             transform: translateZ(1px); 
-                            z-index: -1;                                                 
+                            z-index: -1; 
+                            @media (max-width: $adaptive-laptop){
+                                z-index: 1;
+                            }                                               
                             p {
                                 color: $secondary;
                             }                  
                             span {
-                                width: 14%;                  
-                                i, p {
+                                width: 14%;     
+                                @media (max-width: $adaptive-laptop){
+                                    width: 20%;
+                                }           
+                                @media(max-width:$adaptive-slider2){
+                                    width: 14%;
+                                }
+                                i {
+                                    color: $primary;
+                                    cursor: pointer;
+                                }
+                                p{
                                     color: $primary;
                                 }
                             }
@@ -217,8 +232,11 @@ body{
                     }
                 }                                        
                 .slick-dots {
-                    bottom: 10%;              
-                }                  
+                    bottom: 10%;  
+                    @media(max-width:$adaptive-mobile){
+                        bottom: 9%;
+                    }            
+                }      
             }
         }        
     }

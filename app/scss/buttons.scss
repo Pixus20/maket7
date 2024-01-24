@@ -1,0 +1,17 @@
+.slider_buttons{
+    button{
+        border: 2px solid $secondary;
+        background: transparent;
+    }
+    button:hover{
+        background-color: $third;
+        transition: all 1s ease-in-out;
+        transform: scale(1.2);
+        color: $primary;
+        border-color: $primary;
+        box-shadow: 0 3px 3px 2px $primary;
+    }
+    button:hover>span>i{
+        animation: buttons 1s;
+    }
+}

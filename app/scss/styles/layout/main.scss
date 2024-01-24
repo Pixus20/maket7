@@ -256,6 +256,15 @@ body{
     }
     .content_seven{
         background-color: $seven;
-        color: $seven-text;        
+        color: $seven-text;  
+        .content_seven_in{
+            .content_seven_wrapper{
+                .img7-secondbl{
+                    @media (max-width:$adaptive-mobile){
+                        width: 290px;
+                    }
+                }
+            }
+        }      
     }
 }        

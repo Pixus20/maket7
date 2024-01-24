@@ -1,7 +1,8 @@
 body{
     .container-fluid{ 
         padding: 0;       
-            .banner{
+            .banner{ 
+                position: relative;
                 padding: 0;            
                 .slider_banner{                    
                     .slick-dots{

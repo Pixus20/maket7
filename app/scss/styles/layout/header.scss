@@ -1,0 +1,20 @@
+header{
+    position: absolute;
+    background: transparent;
+    color: $secondary;
+    z-index: 2;
+    .container{
+        .navbar {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                    color:$secondary; 
+                    &:hover{
+                        border-top: 2px solid $secondary;
+                    }
+                    }
+                }
+            }
+        }          
+    }
+}

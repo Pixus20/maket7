@@ -1,0 +1,17 @@
+footer{
+    background-color: $footer;
+    row{
+        .footer{
+            .footer_right{
+                .footer_email{
+                    input{
+                        border:1px solid $footer-border;
+                        border-radius: 5px;
+                        background-color: $footer;
+                        width: 309px;
+                    }
+                }
+            }
+        }
+    }
+}

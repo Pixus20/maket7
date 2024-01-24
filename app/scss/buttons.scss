@@ -15,3 +15,13 @@
         animation: buttons 1s;
     }
 }
+.submit{
+    color:$secondary;
+    background-color: $primary;
+    &:hover{
+        background-color: $third;
+        color: $primary;
+        box-shadow:0 3px 3px 2px $primary;
+        transition: .4s linear;
+    }
+}

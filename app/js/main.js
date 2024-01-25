@@ -61,7 +61,6 @@ $(window).resize(function() {
     destroySlickSlider();
   }
 });
-
 //icon click
 var heartIcons = document.getElementsByClassName('heartIcon');
 var likesNumbers = document.getElementsByClassName('number');
@@ -76,3 +75,18 @@ for (var i = 0; i < heartIcons.length; i++) {
     }
   });
 }
+//scroll
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top - $('.navbar').outerHeight()
+        }, 1000);
+      }
+    }
+  });
+});

@@ -15,6 +15,7 @@ body{
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: 50% -15%;
+                        background-position: fixed;
                         color: $secondary;                       
                         @include set-height($adaptive-laptop, 70vh);
                         @include set-height(900px, 60vh);
@@ -25,6 +26,13 @@ body{
                         @include set-height(350px, 27vh);
                         h1{
                             font-family: 'Montserrat', sans-serif;
+                            @media(min-width:$adaptive-container){
+                                font-size: 90px;
+                                font-weight: 400;
+                            }
+                            @media(min-width:$adaptive-tablet){
+                                font-size: 60px;                                
+                            }
                         }
                 }
             }    

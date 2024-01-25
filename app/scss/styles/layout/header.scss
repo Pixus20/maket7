@@ -1,20 +1,35 @@
-header{
+header {
     position: absolute;
     background: transparent;
     color: $secondary;
-    z-index: 2;
-    .container{
-        .navbar {
-            .navbar-nav {
+    z-index: 2;    
+    h1{
+        font-family: 'MariadPro', bold;
+        font-weight: bold;
+    }
+    .navbar {
+        .navbar-toggler {
+            z-index: 3;
+            border: none;
+            background-color: transparent;
+            color: $secondary;
+            &:hover {
+                background-color: transparent;
+            }
+        }
+        .navbar-collapse {            
+            .navbar-nav {                
                 .nav-item {
                     .nav-link {
-                    color:$secondary; 
-                    &:hover{
-                        border-top: 2px solid $secondary;
-                    }
+                        color: $secondary; 
+                        transition: all .3s ease-in-out;                      
+                        &:hover {
+                            border-top: 3px solid $secondary;
+                            transform: translateY(5px);
+                        }
                     }
                 }
             }
-        }          
+        }
     }
 }

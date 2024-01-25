@@ -14,7 +14,7 @@ body{
                         background-image: url("../images/maket_images/iPhone.png");  
                         background-repeat: no-repeat;
                         background-size: cover;
-                        background-position: 50% 0;
+                        background-position: 50% -15%;
                         color: $secondary;                       
                         @include set-height($adaptive-laptop, 70vh);
                         @include set-height(900px, 60vh);
@@ -23,6 +23,9 @@ body{
                         @include set-height(500px, 35vh);
                         @include set-height(400px, 30vh);
                         @include set-height(350px, 27vh);
+                        h1{
+                            font-family: 'Montserrat', sans-serif;
+                        }
                 }
             }    
         }

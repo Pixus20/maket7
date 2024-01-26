@@ -15,27 +15,40 @@ body{
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: 50% -15%;
-                        background-position: fixed;
-                        color: $secondary;                       
+                        color: $secondary;                    
                         @include set-height($adaptive-laptop, 70vh);
                         @include set-height(900px, 60vh);
-                        @include set-height(700px, 50vh);
-                        @include set-height(600px, 40vh);
-                        @include set-height(500px, 35vh);
-                        @include set-height(400px, 30vh);
-                        @include set-height(350px, 27vh);
+                        @include set-height(700px, 50vh); 
+                        @include set-height(600px, 45vh); 
+                        @include set-height(500px, 40vh);
+                        @include set-height(400px, 30vh);                       
+                        @media(max-width:$adaptive-banner){
+                            background-size: contain;
+                            background-position: 50% 100%;
+                            margin-top: 50px;
+                        }
+
+                        @media(max-width:$adaptive-container){
+                            margin-top: 5px;
+                        }
                         h1{
                             font-family: 'Montserrat', sans-serif;
-                            @media(min-width:$adaptive-container){
+                            @media(min-width:$adaptive-banner){
                                 font-size: 90px;
                                 font-weight: 400;
                             }
-                            @media(min-width:$adaptive-tablet){
+                            @media(max-width:$adaptive-banner   ){
                                 font-size: 60px;                                
                             }
+                            @media(max-width:$adaptive-slider2){
+                                font-size: 32px;
+                            }
+                            @media(max-width:$adaptive-mobile){
+                                font-size: 26px;
+                            }
                         }
-                }
-            }    
+                    }
+                }    
+            }
         }
-    }
-}
+}   

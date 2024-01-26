@@ -4,10 +4,10 @@
     }
   }
 
-@mixin make-container($padding-x: $container-padding-x) {
+@mixin make-container() {
   max-width: 1170px;
-  padding-right: $padding-x;
-  padding-left: $padding-x;
+  padding-right: 0;
+  padding-left: 0;
   margin-right: auto;
   margin-left: auto;
 }

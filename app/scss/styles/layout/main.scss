@@ -1,14 +1,19 @@
 body{
+    .owerwiew-title{
+        @media(max-width:$adaptive-slider2 ){
+            width: 310px;
+        }
+    }
     .content_third{
         background-color: $black-2;
-        height: 610px; 
+        height: 735px; 
         color:$secondary;
         overflow: hidden;
         @media(max-width:$adaptive-slider2){
             height: 800px;
         }
         .row{
-            .container{ 
+            .container{                
                 @media(max-width:$adaptive-slider2){                    
                     img{
                         height: 300px;
@@ -16,7 +21,7 @@ body{
                     }
                 }
                 .content_third_in{
-                    height: 900px; 
+                    height: 735px;
                     @media(max-width:$adaptive-slider2) {
                         width: 290px;
                     }                  
@@ -38,7 +43,7 @@ body{
                         }
                         .content_third_in_right{
                             .span{
-                                img{
+                                img{                                    
                                     height: 90px;
                                     padding-top: 8px;
                                     @media (max-width:$adaptive-slider2){
@@ -179,13 +184,13 @@ body{
                     .slider5-hover {
                         display: none;  
                         animation: fadeInOut 1s ease-in-out forwards;                
-                        @media (max-width: $adaptive-laptop) {
+                        @media (max-width: $adaptive-container) {
                             display: flex;
                             height: 100px;                                                      
                         }                    
                         .img-efect {
                             position: absolute;
-                            top: 85.8%;
+                            top: 86%;
                             height: 14%;
                             background-color: $black-2;
                             transform: translateZ(1px); 
@@ -202,7 +207,7 @@ body{
                                     width: 20%;
                                 }           
                                 @media(max-width:$adaptive-slider2){
-                                    width: 14%;
+                                    width: 16%;
                                 }
                                 i {
                                     color: $primary;

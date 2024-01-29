@@ -1,0 +1,94 @@
+.content_fifth{
+    .content_fifth_in{
+        .text_fifth{
+            h1{
+                color:$primary;
+            }
+            p{
+                color:$black-2;
+            }
+        }
+    }
+    .fifth_images{
+        .fifth_images_in{
+            .img {
+                position: relative;                  
+                img {
+                    height: 520px;
+                    width: 100%;
+                    transition: transform 1s ease-in-out, z-index 0s linear .1s; 
+                    @media(max-width:$adaptive-banner){
+                        height: 500px;
+                    }
+                    @media(max-width:$adaptive-lg){
+                        height: 450px;
+                    }
+                    @media(max-width:$adaptive-tablet){
+                        height: 420px;
+                    }
+                    @media(max-width:$adaptive-mobile){
+                        height: 380px;
+                    }
+                    @media(max-width:$adaptive-mobileS){
+                        height: 350px;
+                    }
+                }             
+                .slider5-hover {
+                    display: none;  
+                    animation: fadeInOut 1s ease-in-out forwards;                
+                    @media (max-width: $adaptive-container) {
+                        display: flex;
+                        height: 100px;                                                      
+                    }                    
+                    .img-efect {
+                        position: absolute;
+                        top: 86%;
+                        height: 14%;
+                        background-color: $black-2;
+                        transform: translateZ(1px); 
+                        z-index: -1; 
+                        @media (max-width: $adaptive-laptop){
+                            z-index: 1;
+                        }                                               
+                        p {
+                            color: $secondary;
+                        }                  
+                        span {
+                            width: 14%;     
+                            @media (max-width: $adaptive-laptop){
+                                width: 20%;
+                            }           
+                            @media(max-width:$adaptive-slider2){
+                                width: 16%;
+                            }
+                            i {
+                                color: $primary;
+                                cursor: pointer;
+                            }
+                            p{
+                                color: $primary;
+                            }
+                        }
+                    }
+                }                    
+                @media (min-width: 1024px) {
+                    &:hover {
+                        .slider5-hover {
+                            display: flex;
+                        }                  
+                        img {
+                            transform: translateY(-13%);
+                            z-index: 1; 
+                        }                                                                  
+                    }
+                }
+            }                                        
+            .slick-dots {
+                bottom: 10%;  
+                @media(max-width:$adaptive-mobile){
+                    bottom: 9%;
+                }            
+            }      
+        }
+    }        
+}

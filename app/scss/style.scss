@@ -1,8 +1,8 @@
-@import "fonts";
-@import "mixin";
-@import "variables";
-@import "buttons";
-@import "animation";
+@import "./default/fonts";
+@import "./default/mixin";
+@import "./default/variables";
+@import "./components/buttons";
+@import "./components/animation";
 @import "./grid/_grid";
 @import "./slider/slider_navigation";
 @import "./styles/verstka";

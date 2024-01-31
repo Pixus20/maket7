@@ -1,12 +1,12 @@
 .content_third{
     background-color: $black-2;
-    height: 735px; 
+    height: 45.938rem; 
     color:$secondary;
     overflow: hidden;
     @media(max-width:$adaptive-slider2){
-        height: 800px;
+        height: 50rem;
     }
-    .row{
+    .row{   
         .container{   
                 .content_third_banner{                
                     img.third-banner{
@@ -14,19 +14,19 @@
                     }
                     @media(max-width:$adaptive-slider2){                    
                         img{
-                            height: 300px;
-                            width: 200px;
+                            height: 18.75rem;
+                            width: 12.5rem;
                         }
                     }
                 }
                 .content_third_in{
-                    height: 735px;
+                    height: 45.938rem;
                     @media(max-width:$adaptive-slider2) {
-                        width: 290px;
+                        width: 18.125rem;
                     }                
                     .content_third_slider{
                         @media(max-width:$adaptive-slider2){
-                            width: 290px;
+                            width: 18.125rem;
                         }
                         ul {
                             display: flex;
@@ -37,15 +37,15 @@
                             }
                         } 
                         img{
-                            height: 400px;
+                            height: 25rem;
                         }
                         .content_third_in_right{
                             .span{
                                 img{                                    
-                                    height: 90px;
-                                    padding-top: 8px;
+                                    height: 5.625rem;
+                                    padding-top: 0.5rem;
                                     @media (max-width:$adaptive-slider2){
-                                        width: 90px;
+                                        width: 5.625rem;
                                     }
                                 }
                             }

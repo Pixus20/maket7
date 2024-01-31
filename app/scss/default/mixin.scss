@@ -3,13 +3,13 @@
       height: $height;
     }
   }
-
 @mixin make-container() {
-  max-width: $container-width;
+  width: $container-width;
   padding-right: 0;
   padding-left: 0;
   margin-right: auto;
   margin-left: auto;
 }
+
 
 

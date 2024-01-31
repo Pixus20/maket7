@@ -7,6 +7,9 @@
             p{
                 color:$black-2;
             }
+            @media(min-width:$adaptive-container){
+                width: 31.25rem;
+            }
         }
     }
     .fifth_images{
@@ -14,23 +17,23 @@
             .img {
                 position: relative;                  
                 img {
-                    height: 520px;
+                    height: 32.5rem;
                     width: 100%;
                     transition: transform 1s ease-in-out, z-index 0s linear .1s; 
                     @media(max-width:$adaptive-banner){
-                        height: 500px;
+                        height: 31.25rem;
                     }
                     @media(max-width:$adaptive-lg){
-                        height: 450px;
+                        height: 28.125rem;
                     }
                     @media(max-width:$adaptive-tablet){
-                        height: 420px;
+                        height: 26.25rem;
                     }
                     @media(max-width:$adaptive-mobile){
-                        height: 380px;
+                        height: 23.75rem;
                     }
                     @media(max-width:$adaptive-mobileS){
-                        height: 350px;
+                        height: 21.875rem;
                     }
                 }             
                 .slider5-hover {
@@ -38,7 +41,7 @@
                     animation: fadeInOut 1s ease-in-out forwards;                
                     @media (max-width: $adaptive-container) {
                         display: flex;
-                        height: 100px;                                                      
+                        height: 6.25rem;                                                      
                     }                    
                     .img-efect {
                         position: absolute;
@@ -54,14 +57,9 @@
                             color: $secondary;
                         }                  
                         span {
-                            width: 14%;     
-                            @media (max-width: $adaptive-laptop){
-                                width: 20%;
-                            }           
-                            @media(max-width:$adaptive-slider2){
-                                width: 16%;
-                            }
+                            width: 20%;     
                             i {
+                                padding-right: 0.313rem;
                                 color: $primary;
                                 cursor: pointer;
                             }
@@ -71,7 +69,7 @@
                         }
                     }
                 }                    
-                @media (min-width: 1024px) {
+                @media (min-width: $adaptive-laptop) {
                     &:hover {
                         .slider5-hover {
                             display: flex;

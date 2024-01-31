@@ -1,14 +1,21 @@
 footer{
     background-color: $footer;
-    row{
-        .footer{
+    .footer{
+        .row{
             .footer_right{
                 .footer_email{
-                    input{
-                        border:1px solid $footer-border;
-                        border-radius: 5px;
-                        background-color: $footer;
-                        width: 309px;
+                    form{
+                        .button{
+                            input{
+                                border-radius: 0.313rem;
+                                background-color: transparent;
+                                border: 0.125rem solid $footer-border;
+                                width: 19.375rem;
+                                @media(max-width:$adaptive-slider2){
+                                    width: 16.875rem;
+                                }
+                            }
+                        }
                     }
                 }
             }

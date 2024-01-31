@@ -17,34 +17,33 @@ body{
                         background-position: 50% -15%;
                         color: $secondary;                    
                         @include set-height($adaptive-laptop, 70vh);
-                        @include set-height(900px, 60vh);
-                        @include set-height(700px, 50vh); 
-                        @include set-height(600px, 45vh); 
-                        @include set-height(500px, 40vh);
-                        @include set-height(400px, 30vh);                       
+                        @include set-height(56.25rem, 60vh);
+                        @include set-height(43.75rem, 50vh); 
+                        @include set-height(37.5rem, 45vh); 
+                        @include set-height(31.25rem, 40vh);
+                        @include set-height(25rem, 30vh);                       
                         @media(max-width:$adaptive-banner){
                             background-size: contain;
                             background-position: 50% 100%;
-                            margin-top: 50px;
+                            margin-top: 3.125rem;
                         }
-
                         @media(max-width:$adaptive-container){
-                            margin-top: 5px;
+                            margin-top: 0.313rem;
                         }
                         h1{
                             font-family: 'Montserrat', sans-serif;
                             @media(min-width:$adaptive-banner){
-                                font-size: 90px;
+                                font-size: 5.625rem;
                                 font-weight: 400;
                             }
                             @media(max-width:$adaptive-banner   ){
-                                font-size: 60px;                                
+                                font-size: 3.75rem;                                
                             }
                             @media(max-width:$adaptive-slider2){
-                                font-size: 32px;
+                                font-size: 2rem;
                             }
                             @media(max-width:$adaptive-mobile){
-                                font-size: 26px;
+                                font-size: 1.625rem;
                             }
                         }
                     }

@@ -1,20 +1,20 @@
 .content_fourth{
     background-color: $fourth;
     color: $secondary;
-    height: 665px; 
+    height: 41.563rem; 
     overflow: hidden;
     @media(max-width:$adaptive-lg){
-        height: 900px;
+        height: 56.25rem;
     }
     .row{
         .content_fourth_in{
             @media(max-width:$adaptive-lg){
-                height: 900px;
+                height: 56.25rem;
             }               
             .content_fourth_left{
-                height: 600px; 
+                height: 37.5rem; 
                 @media(max-width: $adaptive-lg){
-                height: 250px;
+                height: 15.625rem;
                 }
                 p{
                     color:$fourth_text;
@@ -28,8 +28,8 @@
                             width: 100%;
                             img{
                                 @media(max-width:$adaptive-lg){
-                                    width: 90px;
-                                    height: 90px;
+                                    width: 5.625rem;
+                                    height: 5.625rem;
                                 }
                                 
                             }
@@ -42,9 +42,9 @@
                                 }
                             }
                             .slider4{
-                                width: 260px;
+                                width: 16.25rem;
                                 @media(max-width:$adaptive-slider2){
-                                    width: 200px;
+                                    width: 12.5rem;
                                 }
                                 .slick-dots{
                                     top: 137%; 
@@ -70,28 +70,24 @@
                     }  
                     .slider_fourth_color{
                         background-color:$primary;
-                        height: 43px; 
+                        height: 2.688rem; 
                         border-bottom-left-radius: 3%; 
                         border-bottom-right-radius: 3%;                                                   
                     }        
                 }          
             }
-            img{
+            img{                
                 @media(max-width:$adaptive-lg){
-                    height: 480px;
-                    width: 350px;
-                }
-                @media(max-width:$adaptive-tablet){
-                    height: 450px;
-                    width: 330px;
+                    height: 28.125rem;
+                    width: 20.625rem;
                 }
                 @media(max-width:$adaptive-slider2){
-                    height: 400px;
-                    width: 300px;
+                    height: 25rem;
+                    width: 18.75rem;
                 }
                 @media(max-width:$adaptive-mobile){
-                    height: 380px;
-                    width: 280px;
+                    height: 23.75rem;
+                    width: 17.5rem;
                 }
             }
         }

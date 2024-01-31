@@ -1,16 +1,39 @@
 body{
-    .owerwiew-title{
-        @media(max-width:$adaptive-slider2 ){
-            width: 310px;
+    .content_second_block{
+        .content_second_block_in1{
+            @media(min-width:$adaptive-xxl){
+            width: 24.063rem;
+            }
+        }
+        .content_second_block_in2{
+            @media(min-width:$adaptive-xxl){
+            width:25rem;
+            }
+        }
+        .content_second_block_in3{
+            @media(min-width:$adaptive-xxl){
+            width: 24.063rem;
+            }
         }
     }
     .content_six{
         background-color:$primary;
         color:$secondary;
-        .content_six_in{
+        .content_six_right{
+            @media(min-width:$adaptive-container){
+                width: 62.5rem;
+            }
+            .six_photo{
+                @media(min-width:$adaptive-container){
+                    width: 24.063rem;
+                }
+            }
             .content_six_text{
                 q{
                     quotes: none;
+                }
+                @media(min-width:$adaptive-container){
+                    width: 36.563rem;
                 }
             }
         }
@@ -20,9 +43,12 @@ body{
         color: $seven-text;  
         .content_seven_in{
             .content_seven_wrapper{
+                @media(min-width:$adaptive-container){
+                    width: 60.625rem;
+                }
                 .img7-secondbl{
                     @media (max-width:$adaptive-mobile){
-                        width: 290px;
+                        width: 18.125rem;
                     }
                 }
             }

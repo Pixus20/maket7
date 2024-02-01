@@ -26,3 +26,9 @@ header {
         }        
     }
 }
+.navbar-toggler-icon {
+    color:$secondary;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    color:$secondary;
+}

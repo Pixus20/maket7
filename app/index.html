@@ -21,26 +21,26 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse col-xl-8 d-lg-flex justify-content-between" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto w-100 mb-2  mb-lg-0 d-lg-flex justify-content-lg-around">
-                  <li class="nav-item">
-                    <a class="nav-link active pt-4 mb-2" aria-current="page" href="#Hello">Hello</a>
+                <ul class="navbar-nav me-auto w-100 mb-2 mt-3  mb-lg-0 d-flex flex-column align-items-center flex-lg-row justify-content-lg-around">
+                  <li class="nav-item col-6">
+                    <a class="nav-link active  pt-4 mb-2" aria-current="page" href="#Hello">Hello</a>
                   </li>               
-                  <li class="nav-item">
-                    <a class="nav-link active pt-4 mb-2" aria-current="page" href="#Owerview">Owerview</a>
+                  <li class="nav-item col-6">
+                    <a class="nav-link active pt-4 mb-2" aria-current="page" href="#Owerview">Overview</a>
                   </li> 
-                  <li class="nav-item">
+                  <li class="nav-item col-6">
                     <a class="nav-link active pt-4 mb-2" aria-current="page" href="#Share">Share</a>
                   </li> 
-                  <li class="nav-item">
+                  <li class="nav-item col-6">
                     <a class="nav-link active pt-4 mb-2" aria-current="page" href="#Features">Features</a>
                   </li> 
-                  <li class="nav-item">
+                  <li class="nav-item col-6">
                     <a class="nav-link active pt-4 mb-2" aria-current="page" href="#Gallery">Gallery</a>
                   </li> 
-                  <li class="nav-item">
+                  <li class="nav-item col-6">
                     <a class="nav-link active pt-4 mb-2" aria-current="page" href="#Download">Download</a>
                   </li> 
-                  <li class="nav-item">
+                  <li class="nav-item col-6">
                     <a class="nav-link active pt-4 mb-2" aria-current="page" href="#Compatibility">Compatibility</a>
                   </li> 
                 </ul>              
@@ -367,11 +367,11 @@
             </div>
             <div class="footer_right col-10 col-xl-6">              
               <div class="footer_email d-flex justify-content-center justify-content-xl-around text-lg-start text-center ">
-                <form class="d-flex flex-column align-items-center align-items-xl-start" action="url">
-                  <label class="mb-3" for="email">Subscribe our email newsletter.</label>
+                <form class="d-flex flex-column align-items-center align-items-xl-start" action="dummy-page.html" onsubmit="handleFormSubmit(event)">
+                  <label class="mb-3" for="email">Subscribe to our email newsletter.</label>
                   <div class="button d-flex flex-column flex-xl-row">
-                    <input class="p-3" placeholder="Your email" type="email" id="email" pattern=".+@example\.com" size="30" required >
-                    <button class="btn submit p-3 mx-2 mt-3 mt-xl-0 px-4">
+                    <input class="p-3" placeholder="Your email" type="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}[a-zA-Z]{2,}" size="30" required>
+                    <button class="btn submit p-3 mx-2 mt-3 mt-xl-0 px-4" type="submit">
                       Submit
                     </button>
                   </div>

@@ -90,3 +90,12 @@ $(document).ready(function(){
     }
   });
 });
+//valid
+function handleFormSubmit(event) {
+  event.preventDefault();
+  var emailInput = document.getElementById('email');
+  if (emailInput.checkValidity()) {
+    alert('Form submitted successfully!');
+    emailInput.value = ''; 
+  }
+}

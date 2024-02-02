@@ -14,7 +14,7 @@ header {
                 ul{
                     li{
                         a{
-                            color:$secondary;  
+                            color:$secondary !important;  
                             font-weight: normal;                         
                         }
                         &:hover{
@@ -31,4 +31,10 @@ header {
 }
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     color:$secondary;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: $secondary; 
+    font-weight: 400;
 }
